@@ -1,0 +1,10 @@
+Server started successfully
+Processing request #123
+normal log entry
+ERROR: Database connection failed
+Retrying in 5 seconds...
+normal line
+WARNING: Memory usage high
+normal line  
+ERROR: Timeout exceeded
+Connection closed

@@ -15,9 +15,8 @@ func processLine(line string, fields []int, delimiter string, separated bool) (s
 	result := make([]string, 0, len(fields))
 
 	for _, field := range fields {
-		// В задаче поля нумеруются с 1
 		index := field - 1
-		if index < 0 || index >= len(parts) {
+		if index < 0 || index > len(parts)-1 {
 			continue
 		}
 		result = append(result, parts[index])

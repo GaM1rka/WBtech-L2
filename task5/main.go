@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 type customError struct {
 	msg string
 }
@@ -16,11 +20,11 @@ func test() *customError {
 
 func main() {
 	var err error // Объявляется интерфейсная переменная error
-	err = test() // Возвращается интерфейсное значение, тип, которого равен *customError, а значение - nil
+	err = test()  // Возвращается интерфейсное значение, тип, которого равен *customError, а значение - nil
 	// Так как интерфейс имеет только 2 параметра, поэтому условие сработает и выведется "error"
 	if err != nil {
-		println("error")
+		fmt.Println("error")
 		return
 	}
-	println("ok")
+	fmt.Println("ok")
 }

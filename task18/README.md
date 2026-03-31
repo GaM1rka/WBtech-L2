@@ -95,8 +95,4 @@ curl 'http://localhost:8080/events_for_month?user_id=1&date=2024-03-31'
 
 ## Docker
 
-`docker compose up --build`
-
-или
-
 `make docker-run`
